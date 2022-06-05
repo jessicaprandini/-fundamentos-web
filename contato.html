@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul class="menu">
+      <a href="index.html">
+        <li>Home</li>
+      </a>
+      <a href="contato.html">
+        <li>Contato</li>
+      </a>
+    </ul>
+  </nav>
+
+  <h1 class="center">Entre em contato comigo</h1>
+  <div class="container mb-50">
+
+    <div class="div-contato">
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" onkeyup="validarNome()" name="nome">
+        <br>
+        <div id="txtNome">
+        </div>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" onkeyup="validarEmail()">
+        <div id="txtEmail">
+        </div>
+
+        <label for="assunto">Assunto</label>
+        <div id="txtAssunto"></div>
+        <textarea name="assunto" id="assunto" cols="35" rows="5" onkeyup="validaAssunto()"></textarea>
+        <br>
+        <button onclick="enviar()">Enviar</button>
+      </form>
+    </div>
+    <div class="mb-50 div-contato">
+      <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7208.554887383213!2d-49.329171!3d-25.395522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1a1f1d8e199%3A0xc74209ab8d4759b7!2sSanta%20Felicidade%2C%20Curitiba%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1654097344473!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+  </div>
+
+  <hr>
+  <footer>
+    <div class="container mb-50">
+      <a href="https://github.com/jessicaprandini" target="_blank">
+        <img class="tm-social" src="assets/img/github.png" alt="Logo GitHub">
+      </a>
+
+      <a href="https://www.instagram.com/jehprandini/" target="_blank">
+        <img class="tm-social" src="assets/img/instagram.png" alt="Logo Instagram">
+      </a>
+
+      <a href="https://www.linkedin.com/in/jessicaprandini/" target="_blank">
+        <img class="tm-social" src="assets/img/linkedin.png" alt="Logo Linkedin">
+      </a>
+    </div>
+    <p class="center">
+      Todos os direitos reservados: Jéssica Prandini &copy
+    </p>
+
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
